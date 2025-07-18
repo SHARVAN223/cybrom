@@ -3,13 +3,9 @@ using namespace std;
 
 int main()
 {
-    int english = 40;
-    int hindi = 60;
-    int math = 70;
-
-    // int total = english + hindi + math;
-    // int percentage = total * 100 / 300;
-
-    cout << "calucate percentage is = " << (english + hindi + math) / 3;
+    int a;
+    cout << "enter a number";
+    cin >> a;
+    cout << a;
     return 0;
 }
