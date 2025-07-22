@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    int a = 20;
+    int a = 10;
     int b = 45;
 
-    a -= b;
-    cout << a;
+    cout << a++ + a-- + --a - b++ + --b;
+    // cout << a++ + a--;
 }
