@@ -1,1 +1,1 @@
- cout << (a || b) << endl;
+ // cout << "enter your option: ";
