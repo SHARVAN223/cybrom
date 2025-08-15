@@ -14,6 +14,7 @@
     align-items: center;
     padding-right: 100px;
     position: fixed;
+    top: 0%;
 }
 
 #navbar img {
@@ -38,9 +39,11 @@
 
 #navbar ul li a {
     text-decoration: none;
-    font-size: 18px;
-    transition: 0.5s ease;
+    font-size: 19px;
+    transition: 0.5s;
     color: grey;
+    font-family: "Gill Sans", sans-serif;
+
 }
 
 .anchor {
@@ -52,16 +55,20 @@
 
 #navbar ul li a:hover {
     color: #5bc1ac;
+    font-size: 20px;
 }
 
 h2 {
     color: #5bc1ac;
     text-align: center;
     transition: 0.5s ease;
+    font-family: "Gill Sans", sans-serif;
 }
 
 p {
     color: grey;
+    font-size: 13px;
+    font-family: "Gill Sans", sans-serif;
 }
 
 h2:hover {
@@ -71,6 +78,16 @@ h2:hover {
 .btn {
     border-radius: 20px;
     padding: auto;
+}
+
+#navbar .btn2 {
+    border: none;
+    background-color: #5a6f80;
+    color: white;
+}
+
+#navbar .btn2:hover {
+    background-color: #5bc1ac;
 }
 
 #navbar button {
@@ -83,9 +100,9 @@ h2:hover {
     padding: 10px 19px;
 }
 
-button:hover {
+.btn2:hover {
     background-color: #5bc1ac;
-    border: none;
+    transform: scale(1.2);
 }
 
 
@@ -101,7 +118,9 @@ button:hover {
     height: 100vh;
     width: 100%;
     background-image: url(girls\ image1.jpg);
-    border-bottom-right-radius: 800px;
+    /* border-bottom-right-radius: 800px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding-top: 390px;
 }
 
@@ -148,7 +167,7 @@ button:hover {
 
 #page2 {
     /* border: 1px solid black; */
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
@@ -319,14 +338,11 @@ button:hover {
     background-image: url(people\ image.jpg);
     background-size: cover;
     background-position: center;
+    transition-duration: 0.5s;
 }
 
-.container4 {
-    height: 250px;
-    width: 650px;
-    /* border: 1px solid black; */
-    border-radius: 20px;
-    background-color: white;
+.container2:hover {
+    box-shadow: 3px 3px 10px grey;
 }
 
 .container3 {
@@ -336,10 +352,24 @@ button:hover {
     flex-direction: column;
 }
 
+.container4 {
+    height: 250px;
+    width: 650px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.container4:hover {
+    box-shadow: 3px 3px 10px grey;
+}
+
 .container5 {
     display: flex;
     margin-top: 20px;
     gap: 30px;
+
 }
 
 
@@ -349,6 +379,11 @@ button:hover {
     /* border: 1px solid black; */
     border-radius: 20px;
     background-color: white;
+    transition-duration: 0.5s;
+}
+
+.container6:hover {
+    box-shadow: 3px 3px 12px grey;
 }
 
 .container7 {
@@ -357,6 +392,11 @@ button:hover {
     /* border: 1px solid black; */
     border-radius: 20px;
     background-color: white;
+    transition-duration: 0.5s;
+}
+
+.container7:hover {
+    box-shadow: 3px 3px 12px grey;
 }
 
 .heading1 {
@@ -402,6 +442,7 @@ button:hover {
     padding-top: 15px;
     font-size: 18px;
     padding-right: 20px;
+
 }
 
 .heading4 {
@@ -436,22 +477,8 @@ button:hover {
 
 #square1:hover {
     color: #5bc1ac;
-}
-
-.container6:hover {
-    box-shadow: 3px 3px 12px grey;
-}
-
-.container7:hover {
-    box-shadow: 3px 3px 12px grey;
-}
-
-.container4:hover {
-    box-shadow: 3px 3px 12px grey;
-}
-
-.container2:hover {
-    box-shadow: 3px 3px 12px grey;
+    transform: rotate(45deg);
+    transition: 0.5s;
 }
 
 #page4 {
@@ -468,6 +495,12 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2px;
+    transition: 0.5s;
+}
+
+#page4 .container9:hover {
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.1);
 }
 
 #page4 .container8 {
@@ -517,10 +550,12 @@ button:hover {
 #square2 {
     color: gray;
     font-size: 20px;
+    transition: 0.5s;
 }
 
 #square2:hover {
     color: #5a6f80;
+    transform: rotate(45deg);
 }
 
 #page5 {
@@ -549,8 +584,12 @@ button:hover {
     font-family: "Gill Sans", sans-serif;
 }
 
-#page5 .para14 {
+/* #page5 .para14 {
     padding-left: 500px;
+} */
+
+#page5 .para13 {
+    transition: 0.5s;
 }
 
 #page5 .container16 {
@@ -565,10 +604,12 @@ button:hover {
     background-color: #5a6f80;
     border: none;
     color: white;
+    transition: 0.5s;
 }
 
 #page5 .btn1:hover {
     background-color: #5bc1ac;
+    transform: scale(1.2);
 }
 
 #page5 .para13:hover {
@@ -576,9 +617,10 @@ button:hover {
 }
 
 #page6 {
-    height: 130vh;
+    height: 125vh;
     width: 100%;
     /* border: 1px solid black; */
+    background: linear-gradient(rgb(120, 120, 140), rgb(176, 176, 103), rgb(157, 127, 132))
 }
 
 #page6 .HEADING {
@@ -624,7 +666,7 @@ button:hover {
 }
 
 #page6 .minibox7 {
-    height: 85px;
+    height: 75px;
     width: 100%;
     /* border: 1px solid black; */
     border-bottom-right-radius: 20px;
@@ -633,6 +675,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 #page6 .heading7 {
@@ -678,4 +721,558 @@ button:hover {
     text-decoration: none;
     font-family: "Gill Sans", sans-serif;
     color: white;
+}
+
+#page6 .minibox7:hover {
+    background-color: #5bc1ac;
+}
+
+#page7 {
+    height: 110vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #5a6f80;
+
+}
+
+#page7 .heading10 {
+    padding-top: 100px;
+    padding-left: 60px;
+    font-size: 35px;
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+}
+
+#page7 .container20 {
+    margin-left: 60px;
+    margin-top: 30px;
+    display: flex;
+}
+
+#page7 .container21 {
+    height: 550px;
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#page7 .container21 {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 23px;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+#page7 .container22 {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+#page7 .name {
+    height: 50px;
+    width: 290px;
+    border-radius: 10px;
+    background-color: rgb(232, 243, 255);
+    padding-left: 20px;
+    font-size: 18px;
+    border: none;
+}
+
+#page7 .container23 {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+#page7 .container24 {
+    margin-top: 35px;
+}
+
+#page7 .name2 {
+    background-color: rgb(232, 243, 255);
+    width: 93%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#page7 .container25 {
+    margin-top: 20px;
+}
+
+#page7 .btn3 {
+    height: 50px;
+    width: 93%;
+    border: none;
+    border-radius: 20px;
+    background-color: #5a6f80;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#page7 .btn3:hover {
+    background-color: #5bc1ac;
+}
+
+
+#page7 .container27 {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    margin-left: 200px;
+    background-image: url(doctor\ girls.jpg);
+    background-size: cover;
+    /* background-position: 20px; */
+    transition: 1s ease-in;
+}
+
+#page7 .container27:hover {
+    border-radius: 10%;
+}
+
+#page7 .heading12 {
+    padding-left: 260px;
+    font-size: 30px;
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    padding-top: 40px;
+}
+
+#page7 .para15 {
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    padding-left: 200px;
+    padding-top: 25px;
+    font-size: 19px;
+}
+
+#page7 .para16 {
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    padding-left: 190px;
+    padding-top: 10px;
+    font-size: 19px;
+}
+
+#page7 .para17 {
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    padding-left: 380px;
+    padding-top: 10px;
+    font-size: 19px;
+}
+
+#page8 {
+    height: 70vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: rgb(232, 243, 255);
+}
+
+#page8 .container29 {
+    text-align: center;
+
+}
+
+#page8 h1 {
+    padding-top: 100px;
+    font-size: 55px;
+    font-family: "Gill Sans", sans-serif;
+    color: #5a6f80;
+}
+
+#page8 .para18 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+    color: black;
+
+}
+
+#page8 .para19 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    color: black;
+
+}
+
+#page8 .container30 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+#page8 .smallbox1 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(girls.jpg);
+    background-size: cover;
+    background-position: -13px;
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px 3px black;
+}
+
+#page8 .smallbox2 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(boys1.jpg);
+    background-position: -13px;
+    background-size: cover;
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px 3px black;
+}
+
+#page8 .smallbox3 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(girls1.jpg);
+    background-position: -13px;
+    background-size: cover;
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px 3px black;
+}
+
+#page8 .smallbox4 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(boys2.jpg);
+    background-position: -13px;
+    background-size: cover;
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px 3px black;
+}
+
+#page8 .smallbox1:hover {
+    transform: scale(1.3);
+}
+
+#page8 .smallbox2:hover {
+    transform: scale(1.3);
+}
+
+#page8 .smallbox3:hover {
+    transform: scale(1.3);
+}
+
+#page8 .smallbox4:hover {
+    transform: scale(1.3);
+}
+
+#page9 {
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+#page9 .heading13 {
+    font-size: 50px;
+    font-family: "Gill Sans", sans-serif;
+    padding-left: 200px;
+    padding-top: 160px;
+    color: #5a6f80;
+}
+
+#page9 .container32 {
+    display: flex;
+}
+
+#page9 .smallbox5 {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 31px;
+    margin-left: 200px;
+    display: flex;
+    background-image: url(girls1.jpg);
+    background-size: cover;
+    background-position: -15px;
+    transition: 0.5s;
+}
+
+#page9 .smallbox5:hover {
+    box-shadow: 1px 1px 3px black;
+    transform: scale(1.1);
+}
+
+#page9 p {
+    margin-top: 48px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#page9 h3 {
+    margin-left: 20px;
+    margin-top: 4px;
+    font-family: "Gill Sans", sans-serif;
+    color: gray;
+}
+
+#page9 .container34 {
+    width: 30%;
+    border: 0.1px solid rgb(173, 173, 173);
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+#page9 h1 {
+    padding-left: 200px;
+    padding-top: 35px;
+    font-family: "Gill Sans", sans-serif;
+    color: #5bc1ac;
+    font-size: 29px;
+}
+
+#page9 .para20 {
+    padding-left: 180px;
+}
+
+#page9 .link {
+    text-decoration: none;
+    color: gray;
+}
+
+#page9 .link:hover {
+    color: #5bc1ac;
+}
+
+
+#page9 .container35 {
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 200px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#page9 .link1 {
+    height: 40px;
+    width: 70px;
+    /* border: 1px solid black;  */
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #5a6f80;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Gill Sans", sans-serif;
+    transition: 0.5s;
+}
+
+#page9 .link1:hover {
+    background-color: #5bc1ac;
+}
+
+#page9 .end {
+    display: flex;
+}
+
+
+#page9 .container36 {
+    margin-left: 100px;
+}
+
+#page9 .container37 {
+    height: 550px;
+    width: 600px;
+    margin-left: 200px;
+    margin-top: 200px;
+    background-color: rgb(232, 243, 255);
+}
+
+#page9 .heading15 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Gill Sans", sans-serif;
+    padding-top: 20px;
+    color: #5a6f80;
+}
+
+
+#page9 .container39 {
+    display: flex;
+}
+
+#page9 .para21 {
+    padding-left: 10px;
+}
+
+#page9 .link2 {
+    padding-top: 47px;
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+#page9 .link2:hover {
+    color: #5bc1ac;
+}
+
+#page9 .container40 {
+    display: flex;
+}
+
+#page9 .name3 {
+    height: 50px;
+    width: 250px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 33px;
+    font-size: 18px;
+    border: none;
+}
+
+#page9 .name4 {
+    height: 50px;
+    width: 533px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 33px;
+    font-size: 18px;
+    border: none;
+}
+
+#page9 .name5 {
+    background-color: white;
+    height: 100px;
+    width: 90%;
+    font-size: 15px;
+    margin-left: 33px;
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    margin-top: 25px;
+}
+
+
+#page9 .container43 {
+    margin-left: 33px;
+    margin-top: 25px;
+}
+
+#page9 .btn4 {
+    height: 50px;
+    width: 94%;
+    border: none;
+    border-radius: 20px;
+    background-color: #5a6f80;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#page9 .btn4:hover {
+    background-color: #5bc1ac;
+}
+
+/* #bar {
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    left: 0%;
+    top: 4%;
+    font-size: 28px;
+} */
+
+#check {
+    display: none;
+    z-index: 199;
+}
+
+@media (max-width:500px) {
+
+    #bar {
+        position: absolute;
+        z-index: 100;
+        right: 5%;
+        left: 0%;
+        top: 4%;
+        font-size: 28px;
+    }
+
+    #navbar div ul {
+        display: none;
+    }
+
+    #navbar .btn {
+        display: none;
+    }
+
+    #check:checked~header #navbar div ul {
+        position: absolute;
+        z-index: 200;
+        display: block;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        line-height: 30px;
+        /* background-color: white; */
+    }
+
+    #check:checked~header #navbar .btn {
+        position: absolute;
+        z-index: 200;
+        display: block;
+        top: 310%;
+        left: 0px;
+        width: 100%;
+        /* background-color: white; */
+    }
+
+    #page1 .font1 .angle1 i {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    #page2 .heading {
+        font-size: 20px;
+    }
+
+    #page2 .container {
+        display: block;
+    }
+
+
+    #page1 {
+        height: 100vh;
+        width: 100%;
+        background-image: url(girls\ image1.jpg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border-bottom-right-radius: 800px; */
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 390px;
+    }
 }
